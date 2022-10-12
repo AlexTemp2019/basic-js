@@ -105,6 +105,8 @@ describe('Count cats!', () => {
       const stringSet = ['aa', '##', false, NaN, 2, 3, '^ ^', undefined, 54, ' ^^'];
       for (let i = 3; i < 60; i++) {
         const { backyard, count } = fakeRandom({ rows: i, cols: i, stringSet });
+        console.log(backyard);
+        console.log(count);
         assert.equal(countCats(backyard), count);
       }
     });
