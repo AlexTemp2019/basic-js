@@ -193,7 +193,7 @@ describe('What season', () => {
                 () => getSeason('foo'),
                 () => getSeason({ John: 'Smith' }),
                 () => getSeason(20192701),
-                () => getSeason([2019, '27', 0 + '1']),
+                () => getSeason([2019, '27', 0 + '1']),                
                 () => getSeason(() => new Date())
             ], 'Invalid date!');
 
